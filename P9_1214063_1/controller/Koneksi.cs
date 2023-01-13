@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+﻿using MySqlConnector;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -10,7 +10,7 @@ namespace P9_1214063_1
 {
     internal class Koneksi
     {
-        string conectionstring = "Server=localhost;Database=ulbi_1;Uid=root;Pwd=;";
+        string conectionstring = "Server=localhost;Database=ulbii;Uid=root;Pwd=;";
         MySqlConnection kon;
 
         public void OpenConnection()
@@ -39,7 +39,5 @@ namespace P9_1214063_1
             object datatable = data.Tables[0];
             return datatable;
         }
-
-
-    }
+    }// end internal class koneksi
 }
