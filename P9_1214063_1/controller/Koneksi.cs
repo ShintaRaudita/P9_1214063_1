@@ -39,5 +39,10 @@ namespace P9_1214063_1
             object datatable = data.Tables[0];
             return datatable;
         }
+
+        internal MySql.Data.MySqlClient.MySqlDataReader reader(string v)
+        {
+            throw new NotImplementedException();
+        }
     }// end internal class koneksi
 }
